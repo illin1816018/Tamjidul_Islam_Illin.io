@@ -143,6 +143,21 @@
       text-decoration: underline;
     }
 
+    /* Updated styling for image size */
+    .training-image {
+      width: 450px; /* Set to the required size */
+      height: auto;
+      display: block;
+      margin: 10px auto; /* Center the image */
+    }
+
+    .accolade-image {
+      width: 450px; /* Set to the required size */
+      height: auto;
+      display: block;
+      margin: 10px auto; /* Center the image */
+    }
+
     @media (max-width: 768px) {
       .content-container {
         flex-direction: column;
@@ -151,6 +166,10 @@
       .intro, .profile-photo-container {
         text-align: center;
         margin: 0;
+      }
+      .training-image, .accolade-image {
+        width: 100%; /* Set to full width on smaller screens */
+        max-width: 450px;
       }
     }
   </style>
@@ -237,17 +256,17 @@
       <h3>Riparian Management and Riverbank Erosion: A Case Study on Harirampur Upazila</h3>
       <p><em>Presented at 6th International Conference on Advances in Civil Engineering (ICACE-2022), CUET, Bangladesh</em></p>
       <p>This study examines riverbank erosion management along the Padma River using GIS and NDVI analyses, proposing eco-friendly guidelines for sustainable protection.</p>
-      <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=HvjsPBMAAAAJ">Mushtari Maliha</a></p>
+      <p><strong>Supervisor:</strong> Mushtari Maliha</p>
     </div>
     <div class="research-entry">
       <h3>Soil Erosion Assessment in Rangamati District: Comparing Hydrological Conditions & Geospatial Data Before & After the 2017 Landslide Event</h3>
       <p><em>Presented at 4th International Conference on Planning, Architecture & Civil Engineering (ICAPCE-2023), RUET, Bangladesh</em></p>
-      <p>Examines the effects of land use and land cover (LULC) changes on flash flood patterns in the Sylhet region, highlighting the impact of reduced forest cover.</p>
+      <p>This study focuses on LULC changes on flash flood patterns in the Sylhet region and how urban development influences flood timing using the HEC-HMS hydrological model.</p>
     </div>
     <div class="research-entry">
       <h3>Prediction of Land Use Land Cover (LULC) Changes at Sirajganj in Northwest Region of Bangladesh with Machine Learning Algorithm (CA-ANN)</h3>
       <p><em>Presented at American Geophysical Union (AGU) 2023</em></p>
-      <p>Analyzes and predicts LULC changes in Sirajganj, Bangladesh, using satellite imagery and machine learning models to understand the impact on land surface temperature.</p>
+      <p>This study uses satellite imagery and machine learning models to predict LULC changes in Sirajganj, Bangladesh, and examines the impact on land surface temperature.</p>
     </div>
     <div class="research-entry">
       <h3>Evaluating the Impact of LULC Changes on Flash Flood Using HEC-HMS: A Case Study for Sylhet Region</h3>
@@ -267,13 +286,13 @@
 
   <!-- Industrial Training Section -->
   <div id="internship" class="section-content">
-    <h2 class="section-title">Internship</h2>
+    <h2 class="section-title">Industrial Training</h2>
     <div class="training-entry">
       <h3>Institute of Water Modelling (IWM), Uttara</h3>
       <p>Hands-on training in SWAT and its real-time application for hydrological decision-making.</p>
       <img src="Images/iwm.jpeg" alt="Certificate from Institute of Water Modelling" class="training-image">
     </div>
-  </div>
+    
 
   <!-- Participations and Accolades Section -->
   <div id="accolades" class="section-content">
@@ -282,7 +301,7 @@
       <h3>BUET Career Club</h3>
       <p>Being the president of BCC has been one of the most exhausting yet rewarding experiences of my life. Leading 140 talented individuals has been the highlight of my university life.</p>
       <p><em>Position: President</em></p>
-      <img src="Images/bcc.jpeg" alt="BUET Career Club" class="training-image">
+      <img src="Images/bcc.jpeg" alt="BUET Career Club" class="accolade-image">
     </div>
     <div class="accolade-entry">
       <h3>Battle of Minds - 2023</h3>
@@ -307,5 +326,6 @@
   </div>
 </body>
 </html>
+
 
 
