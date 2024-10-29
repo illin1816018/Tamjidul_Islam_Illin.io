@@ -12,7 +12,7 @@
     /* Style for the navigation bar */
     .navbar {
       overflow: hidden;
-      background-color: black;
+      background-color: #121212; /* Match background color */
       position: fixed;
       top: 0;
       width: 100%;
@@ -20,6 +20,7 @@
       display: flex;
       justify-content: center;
       padding: 10px 0;
+      font-family: Arial, sans-serif; /* Change font */
     }
 
     .navbar-container {
@@ -31,7 +32,7 @@
 
     .navbar button {
       color: #f2f2f2;
-      background-color: black;
+      background-color: #121212;
       padding: 10px 20px;
       border: none;
       cursor: pointer;
@@ -45,9 +46,8 @@
 
     body {
       padding-top: 80px;
-      color: azure;
-      scroll-behavior: smooth;
-      font-family: Arial, sans-serif;
+      color: #e0e0e0; /* Light grey color for text */
+      font-family: Arial, sans-serif; /* Consistent font */
       background-color: #121212;
       margin: 0;
       line-height: 1.6;
@@ -63,18 +63,19 @@
     }
 
     .intro {
-      flex: 1;
-      min-width: 250px;
+      text-align: center;
+      width: 100%;
     }
 
     .intro h1 {
-      font-size: 2em;
-      color: white;
+      font-size: 2.5em;
+      color: #ffffff; /* White color for name */
+      font-weight: bold;
     }
 
     .intro h2 {
       font-size: 1.2em;
-      color: grey;
+      color: #b0b0b0; /* Grey color for subtitle */
     }
 
     .intro p {
@@ -84,7 +85,6 @@
     }
 
     .profile-photo {
-      flex-shrink: 0;
       border-radius: 50%;
       width: 200px;
       height: 200px;
@@ -118,18 +118,6 @@
       font-weight: bold;
     }
 
-    .project-type, .training-type, .accolade-status {
-      color: violet;
-      font-style: italic;
-      margin-top: -5px;
-      display: block;
-    }
-
-    .education-entry p, .research-entry p, .training-description, .accolade-description {
-      color: #ddd;
-      margin-top: 5px;
-    }
-
     .link-section {
       text-align: center;
       margin-top: 20px;
@@ -144,13 +132,6 @@
 
     .link-section a:hover {
       text-decoration: underline;
-    }
-
-    .training-image {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px 0;
     }
   </style>
   
@@ -238,24 +219,6 @@
       <p>This study examines riverbank erosion management along the Padma River using GIS and NDVI analyses, proposing eco-friendly guidelines for sustainable protection.</p>
       <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=HvjsPBMAAAAJ">Mushtari Maliha</a></p>
     </div>
-
-    <div class="research-entry">
-      <h3>Soil Erosion Assessment in Rangamati District: Comparing Hydrological Conditions & Geospatial Data Before & After the 2017 Landslide Event</h3>
-      <p><em>Presented at 4th International Conference on Planning, Architecture & Civil Engineering (ICAPCE-2023), RUET, Bangladesh</em></p>
-      <p>This study examines hydrological conditions and geospatial data in Rangamati District, focusing on the impact of land use changes before and after the 2017 landslide event.</p>
-    </div>
-
-    <div class="research-entry">
-      <h3>Prediction of Land Use Land Cover (LULC) Changes at Sirajganj in Northwest Region of Bangladesh with Machine Learning Algorithm (CA-ANN)</h3>
-      <p><em>Presented at American Geophysical Union (AGU) 2023</em></p>
-      <p>This study uses satellite imagery and machine learning models to predict LULC changes in Sirajganj, Bangladesh, and examines the impact on land surface temperature.</p>
-    </div>
-
-    <div class="research-entry">
-      <h3>Evaluating the Impact of LULC Changes on Flash Flood Using HEC-HMS: A Case Study for Sylhet Region</h3>
-      <p><em>Presented at 7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024), KUET, Bangladesh</em></p>
-      <p>This paper highlights how urban development and deforestation accelerate flash floods in Sylhet, Bangladesh.</p>
-    </div>
   </div>
 
   <!-- Work Experience Section -->
@@ -295,25 +258,8 @@
       <p>The Battle of Minds is a global competition hosted by British American Tobacco, challenging university students to develop innovative solutions.</p>
       <p><em>Achievement: Quarter Finalists</em></p>
     </div>
-
-    <div class="accolade-entry">
-      <h3>Hult Prize 2020</h3>
-      <p>Our sustainable and eco-friendly toothbrush company prototype "Meseco" allowed us to participate in this prestigious competition.</p>
-      <p><em>Achievement: 2nd Runner-up (On-campus round)</em></p>
-    </div>
-
-    <div class="accolade-entry">
-      <h3>Banglalink Ennovators</h3>
-      <p>Ennovators is an idea-generating competition across Bangladesh, fostering innovation among youth.</p>
-      <p><em>Achievement: Top 100</em></p>
-    </div>
-
-    <div class="accolade-entry">
-      <h3>UniV Poster Presentation</h3>
-      <p>Our poster, based on sustainable solutions to reduce the damage caused by Meghna River erosion, was a recognized contribution in environmental resilience.</p>
-      <p><em>Award: Gold Award</em></p>
-    </div>
   </div>
 </body>
 </html>
+
 
