@@ -1,409 +1,176 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tamjidul Islam Illin</title>
+  <meta name="author" content="Tamjidul Islam Illin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Images/self.jpeg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    <title>Tamjidul Islam Illin</title>
+  <style>
+    /* Style for the navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+    }
 
-    <meta name="author" content="Tamjidul Islam Illin">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="Images/self.jpeg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  
-  
-  
-    <style>
-      /* Style for the navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: black;
-        /* font-family: Arial, sans-serif; */
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        left: 0;
-        right: 0;
-        display: flex;
-      }
-    
-      .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 800px;
-      }
-    
-      .navbar button {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        background-color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        margin: none;
-    
-      }
-    
-      .navbar button:hover {
-        background-color: skyblue;
-        color: black;
-      }
-    
-      body {
-        padding-top: 50px;
-        scroll-behavior: smooth;
-      }
-    </style>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".navbar button");
-        buttons.forEach(button => {
-          button.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("data-target");
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-              window.scrollTo({
-                top: targetElement.offsetTop - 50, // Adjust for fixed navbar height
-                behavior: "smooth"
-              });
-            }
-          });
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .navbar button {
+      display: block;
+      color: #f2f2f2;
+      background-color: black;
+      text-align: center;
+      padding: 14px 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .navbar button:hover {
+      background-color: skyblue;
+      color: black;
+    }
+
+    body {
+      padding-top: 70px;
+      color: azure;
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".navbar button");
+      buttons.forEach(button => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("data-target");
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 50,
+              behavior: "smooth"
+            });
+          }
         });
       });
-    </script>
-  
-  
+    });
+  </script>
+</head>
 
-  
-  
-  
-  <table id="About"
-
-  </head>
-
-<body style="color: azure;">
-
-    <div class="navbar">
+<body>
+  <div class="navbar">
     <div class="navbar-container">
-      <button data-target="About">About Me</a>
-        <button data-target="education">Education</a>
-          <button data-target="research">Research Works</a>
-            <button data-target="Work Experience">Work Experience</a>
-              <button data-target="Industrial training">Internship</a>
-                <button data-target="Extracurricular and accolades">Extracurricular and accolades</a>
-                 
+      <button data-target="about">About Me</button>
+      <button data-target="education">Education</button>
+      <button data-target="research">Research Works</button>
+      <button data-target="work-experience">Work Experience</button>
+      <button data-target="internship">Internship</button>
+      <button data-target="accolades">Extracurricular and Accolades</button>
     </div>
   </div>
-  <br>
-     
-   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <p class="name" style="text-align: center;">
-                Tamjidul Islam Illin
-              </p>
-              <p style="text-align: center;">Research Enthusiast, Learner, Cinephile</p>
-            
-              <body>    
-            </tr>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:60%;vertical-align:middle">
-                <p>
-                <p> Hi, I am known as <b>Illin</b>. I’m a true optimist who wholeheartedly believes in the goodness of people! I love seeing the bright side in every situation and finding the best in everyone around me.
-                <p>I am a graduate of the Department of Water Resouces Engineering at the <a href="https://www.buet.ac.bd/web/#/">Bangladesh University of Engineering Technology</a>. I proudly graduated on the 1st of July 2024 and stepped straight into my role as a Junior Water Resource Engineer at<a href= "https://technovativesolutions.co.uk/"> Technovative Solutions LTD </a> that day. </p> 
-               
-                  
-              
-                <p style="text-align:center">
-                  <a href="CV_TAMJIDUL_ISLAM_ILLIN.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/tamjidul-islam-illin-b425641a5/">LinkedIn</a> 
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <img style="width:80%;height: Auto;max-width:80%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="Images/self1.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody>
-         
-          
-        
-          <!--Education-->
-          <table id="education"
-         
-        </table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <p class="name" style="text-align: center;">
-                Education
-            <br>
-              <div style="margin-bottom: 10px;">
-                    <h3 style="color: white;">Bachelor of Science in Water Resources Engineering (BSc. Engg.) </h3> 
-                    Bangladesh University of Engineering and Technology <br>
-                    Dhaka, Bangladesh <br>
-                    CGPA: 3.76/4.00<br>
-                    
-                  
-                    <h3 style="color: white;">Higher Secondary School Certificate </h3>
-        
-                    Dhaka Residential Model College <br>
-                    Dhaka, Bangladesh <br>
-                    GPA: 5.00/5.00<br>
-                 
-                 
-                    <h3 style="color: white;">Secondary School Certificate </h3>
-        
-                    Dhaka Residential Model College <br>
-                    Dhaka, Bangladesh <br>
-                    GPA: 5.00/5.00<br>
-                    <br>
-              </div>
-            </td>
-          </tr>
-        </table>
-       
 
-        <table id="research"
-          <!-- Research Works-->
-          
-                  <p class="name" style="text-align: center;"> Research Works
-                        
-                    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                      <tr style="padding:0px">
-                        <td style="padding:0px">
-                          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                            <tr style="padding:0px">
-          
-                        <td style="padding:2.5%;width:75%;vertical-align:middle">
-                          <h3 style="color: skyblue;">Downscaling Climate ModelData Using Machine Learning and Assessing the Impact of Climate Change on the Rainfall of Potomac Basin
-                            </h3>
-                          <br>
-                          <b><em style="color:violet">Undergraduate Thesis
-                    
-                          <p>In this study, My downscaled output was at 0.17x0.2 degrees and I tried to visualize the impact of climate change on precipitation for SSP 3-7.00 </p>
-                    
-                          <h3 style="color: azure;">Thesis Supervisor: </h3> <a target="_blank" href="https://scholar.google.com/citations?user=40TTseQAAAAJ&hl=en&oi=ao">Dr. A.T.M. Hasan Zobeyer</a>
-                          
-                        </td>
-                      </tr>
-                      
-                        <td style="padding:2.5%;width:75%;vertical-align:middle">
-                         <h3 style="color: skyblue;">RIPARIAN MANAGEMNET and RIVERBANK EROSION: A case study on Harirampur Upazila
-                         
-                          </h3>
-                          <strong>Tamjidul Islam Illin</strong>, Antara Paul, Mushtari Maliha 
-                        <br>
-                     
-                        <b><em style="color:violet">6th International Conference on Advances in Civil Engineering (ICACE-2022) 21-23 December 2022 CUET, Chattogram, Bangladesh</em></b>
-                  
-                        <p>Our paper presents a case study on managing riverbank erosion through riparian management along the Padma River in Harirampur Upazila, Bangladesh. The study employs GIS and NDVI analyses to examine vegetation's role in mitigating erosion, proposing eco-friendly guidelines for sustainable riverbank protection based on observed spatiotemporal shifts and community feedback.</p>
-          
-                  
-                        <h3 style="color: azure;">Supervisor: </h3> <a target="_blank" href="https://scholar.google.com/citations?user=HvjsPBMAAAAJ">Mushtari Maliha</a>
-                        
-                      </td>
-                    </tr>
-                      
-                    <td style="padding:2.5%;width:75%;vertical-align:middle">
-                      <h3 style="color: skyblue;">Soil Erosion Assessment in Rangamati District:Comparing Hydrological Conditions & Geospatial Data Before & After the 2017 Landslide Event
-                       
-                        </h3>
-                        Himel Moulik, Mahin Saleh, Antara Paul,<strong>Tamjidul Islam Illin</strong>
-                      <br>
-                   
-                      <b><em style="color:violet">Final paper number:0144,4th International Conference on Planning,Architecture & Civil Engineering(ICAPCE-2023) 12-14October,2023 RUET,Rajshahi,Bangladesh
-                    </em></b> 
-                
-                      <p>Our paper examines the effects of land use and land cover (LULC) changes on flash flood patterns in the Sylhet region of Bangladesh, particularly focusing on how increased urban development and reduced forest cover influence flood timing. Using the HEC-HMS hydrological model, highlights that impervious surface growth has led to shorter lag times between peak rainfall events in Meghalaya and flash floods in Sylhet, intensifying flood risk for the region​
-                
-                     
-                    </td>
-                  </tr>
-                      
-          
-          
-                      <td style="padding:2.5%;width:75%;vertical-align:middle">
-                        <h3 style="color: skyblue;">Prediction of Land Use Land Cover (LULC) Changes at Sirajganj in Northwest Region of Bangladesh with Machine Learning Algorithm (CA-ANN) and Evaluating Their Impact on Land Surface Temperature
-                         
-                          </h3>
-                          Indro Rahul, <strong>Samiur Rashid Abir</strong>, Tahsin Ishrak
-                        <br>
-                     
-                        <b><em style="color:violet">American Geophysical Union (AGU) 2023
-                      </em></b>
-                  
-                        <p>Our paper focuses on analyzing and predicting land use and land cover (LULC) changes in Sirajganj, Bangladesh, a rapidly urbanizing region near the Jamuna River, to understand the impact on land surface temperature (LST). Using satellite imagery and machine learning models, it identifies trends in urban expansion and vegetation loss, projecting LULC changes to 2030 to inform climate resilience and resource protection strategies.
-                      </td>
-                       </tr>
-                      
-                        <td style="padding:2.5%;width:75%;vertical-align:middle">
-                          <h3 style="color: skyblue;">EVALUATING THE IMPACT OF LULC CHANGES ON FLASH FLOOD USING HEC HMS: A CASE STUDY FOR SYLHET REGION
-                            </h3>
-                            F.Ahmed, Md. A.I.Wahid, M. Turjo, Md A. Rahman <strong>Tamjidul Islam Illin</strong>, A.K.M. R. Hossain
-                          <br>
-                       
-                          <b><em style="color:violet">7th International Conference on Civil Engineering for Sustainable Development(ICCESD 2024), 7~9 February 2024, KUET, Khulna, Bangladesh
-                      
-                        </em></b>
-                      
-                          <p>Our paper analyzes the impact of land use and land cover (LULC) changes on flash floods in the Sylhet region of Bangladesh, particularly examining how urban development and deforestation accelerate flood events. Using the HEC-HMS model, it highlights the reduction in flood lag time from 12 hours in 2002 to 7 hours in 2022 due to increased impervious surfaces and reduced forest cover
-                           
-                        </td>
-                      </tr>
-     
+  <div id="about" style="text-align: center;">
+    <h2>Tamjidul Islam Illin</h2>
+    <p>Research Enthusiast, Learner, Cinephile</p>
+    <p>Hi, I am known as <b>Illin</b>. I’m a true optimist who wholeheartedly believes in the goodness of people!</p>
+    <p>I am a graduate of the Department of Water Resources Engineering at <a href="https://www.buet.ac.bd/web/#/">Bangladesh University of Engineering Technology</a>. I joined <a href="https://technovativesolutions.co.uk/">Technovative Solutions LTD</a> as a Junior Water Resource Engineer on the 1st of July 2024.</p>
+    <p>
+      <a href="CV_TAMJIDUL_ISLAM_ILLIN.pdf">CV</a> &nbsp;/&nbsp;
+      <a href="https://www.linkedin.com/in/tamjidul-islam-illin-b425641a5/">LinkedIn</a>
+    </p>
+    <img src="Images/self1.jpeg" alt="Profile photo of Tamjidul Islam Illin" style="width:80%; max-width:200px; border-radius:50%;">
+  </div>
 
+  <div id="education">
+    <h2 style="text-align: center;">Education</h2>
+    <p><strong>Bachelor of Science in Water Resources Engineering (BSc. Engg.)</strong><br>
+      Bangladesh University of Engineering and Technology, Dhaka, Bangladesh<br>
+      CGPA: 3.76/4.00</p>
+    <p><strong>Higher Secondary School Certificate</strong><br>
+      Dhaka Residential Model College, Dhaka, Bangladesh<br>
+      GPA: 5.00/5.00</p>
+    <p><strong>Secondary School Certificate</strong><br>
+      Dhaka Residential Model College, Dhaka, Bangladesh<br>
+      GPA: 5.00/5.00</p>
+  </div>
 
- 
-          <!-- Projects Section -->
-        
-          <table id="Work Experience"
-                          <td style="padding:2.5%;width:100%;vertical-align:middle">
-                            <p class="name" style="text-align: center;"> Work Experience
-                            <p style="text-align: center;">These include the projects related with my current affiliation
-                            </p>
-                          </td>
-                        </tr>
-                      
-                        <td style="padding:2.5%;width:75%;vertical-align:middle">
-                          <h3 style="color: skyblue;"> ClIMAS Climate Assembly
-                  
-                            </h3>
-                            <p> My objective is to develop a KEBS (Knowledge Evidence Based Support) tool to automate agenda generation procedure for the Europian climate assemble using NLP (Natural Language Processing. 
-            
-                            <br>   
-                        
-                         
-                        
-                         <p>
-            
-                            <h3 style="color: azure;">Supervisor: </h3> <a target="_blank" href="https://www.linkedin.com/in/dr-mohammad-azizur-rahman-b8a0a416/?originalSubdomain=uk">Dr Mohammad Azizur Rahman</a></h3>
-                        </td>
-                        </tr>
+  <div id="research">
+    <h2 style="text-align: center;">Research Works</h2>
+    
+    <h3 style="color: skyblue; text-align: center;">Downscaling Climate Model Data Using Machine Learning and Assessing the Impact of Climate Change on the Rainfall of Potomac Basin</h3>
+    <p style="text-align: center;"><em style="color: violet;">Undergraduate Thesis</em></p>
+    <p style="text-align: center;">In this study, my downscaled output was at 0.17x0.2 degrees, visualizing the impact of climate change on precipitation under SSP 3-7.00 scenarios.</p>
+    <p style="text-align: center;"><strong>Thesis Supervisor:</strong> <a href="https://scholar.google.com/citations?user=40TTseQAAAAJ&hl=en&oi=ao">Dr. A.T.M. Hasan Zobeyer</a></p>
 
-      
+    <h3 style="color: skyblue; text-align: center;">Riparian Management and Riverbank Erosion: A Case Study on Harirampur Upazila</h3>
+    <p style="text-align: center;"><em style="color: violet;">Presented at 6th International Conference on Advances in Civil Engineering (ICACE-2022), CUET, Bangladesh</em></p>
+    <p style="text-align: center;">Our paper presents a case study on managing riverbank erosion through riparian management along the Padma River in Harirampur Upazila. Using GIS and NDVI analyses, we propose eco-friendly guidelines for sustainable riverbank protection.</p>
+    <p style="text-align: center;"><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=HvjsPBMAAAAJ">Mushtari Maliha</a></p>
 
-              <table id="Internship"
+    <h3 style="color: skyblue; text-align: center;">Soil Erosion Assessment in Rangamati District: Comparing Hydrological Conditions & Geospatial Data Before & After the 2017 Landslide Event</h3>
+    <p style="text-align: center;"><em style="color: violet;">Presented at 4th International Conference on Planning, Architecture & Civil Engineering (ICAPCE-2023), RUET, Bangladesh</em></p>
+    <p style="text-align: center;">This research examines the effects of land use and land cover changes on flash flood patterns in Sylhet, Bangladesh, highlighting increased urban development and reduced forest cover impacts on flood timing using the HEC-HMS model.</p>
 
+    <h3 style="color: skyblue; text-align: center;">Prediction of Land Use Land Cover (LULC) Changes at Sirajganj in Northwest Region of Bangladesh with Machine Learning Algorithm (CA-ANN) and Evaluating Their Impact on Land Surface Temperature</h3>
+    <p style="text-align: center;"><em style="color: violet;">Presented at American Geophysical Union (AGU) 2023</em></p>
+    <p style="text-align: center;">This study uses satellite imagery and machine learning models to predict LULC changes in Sirajganj, Bangladesh, and examines the impact of urban expansion and vegetation loss on land surface temperature.</p>
 
-                        <!-- Industrial Tranining -->
-                                <td style="padding:2.5%;width:100%;vertical-align:middle">
-                                  <p class="name" style="text-align: center;"> Internship </p>
-                                </td>
-                              </tr>
-                              
-                              <td style="padding:2.5%;width:75%;vertical-align:middle">
-                                <h3 style="color: skyblue;"> Institute of Water Modelling (IWM) , Uttara
-                                
-                                    </h3>
-                                    <p>The Institute of Water Modelling (IWM), established in 1996 by the Government of Bangladesh, is a not-for-profit organization providing expertise in water resources, urban drainage, flood, and irrigation management, among other areas, to promote sustainable water solutions. During my time there, I received hands-on training in SWAT and its real-time application for hydrological decision-making.
-                                    <br>
-                                      
-                                 <b><em style="color:violet">Intern
-                                </em></b>
-                                   
-                                <img src="Images/iwm.jpeg" style="width:300px;height:200px;" class="center">
-                                
-                                </td>
-                                </tr>
+    <h3 style="color: skyblue; text-align: center;">Evaluating the Impact of LULC Changes on Flash Flood Using HEC-HMS: A Case Study for Sylhet Region</h3>
+    <p style="text-align: center;"><em style="color: violet;">Presented at 7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024), KUET, Bangladesh</em></p>
+    <p style="text-align: center;">Our paper highlights how urban development and deforestation accelerate flash floods in Sylhet, Bangladesh, with flood lag times decreasing from 12 hours to 7 hours due to increased impervious surfaces.</p>
+  </div>
 
+  <div id="work-experience">
+    <h2 style="text-align: center;">Work Experience</h2>
+    <p>CLIMAS Climate Assembly</p>
+    <p>Developing a Knowledge Evidence-Based Support (KEBS) tool to automate agenda generation for the European Climate Assembly using NLP.</p>
+  </div>
 
-  
+  <div id="internship">
+    <h2 style="text-align: center;">Internship</h2>
+    <p><strong>Institute of Water Modelling (IWM), Uttara</strong><br>
+      Hands-on training in SWAT and its real-time application for hydrological decision-making.</p>
+    <img src="Images/iwm.jpeg" alt="Institute of Water Modelling" style="width:300px; height:200px;">
+  </div>
 
-             <table id="accolades"
-                                 <!-- Participations and accolades -->
-                               
-                                
-                                 <td style="padding:2.5%;width:100%;vertical-align:middle">
-                                  <p class="name" style="text-align: center;"> Extracurricular and accolades </p>
-                                </td>
-                              </tr>
-                              
-                              <td style="padding:2.5%;width:75%;vertical-align:middle">
-                              <h3 style="color: skyblue;"> BUET Career Club 
-                              
-                                  </h3>
-                                  <p> Being the president of BCC has been one of the most exhausting yet rewarding experiences of my life. The transformation of my personality from a nervous freshman to a confident individual is largely thanks to this club. Most of our events are done on a large scale and leading 140 talented individuals have been the highlight of my university life.
-                                  <br>   
-                              
-                                <b><em style="color:violet">President
-                              </em></b>
-                               <img src="Images/bcc.jpeg" style="width:300px;height:200px;" class="center">
-                              
-                              </td>
-                              </tr>
-                              
-                              
-                              
-                              
-                              
-                              
-                              <td style="padding:2.5%;width:75%;vertical-align:middle">
-                                <h3 style="color: skyblue;"> Battle of Minds - 2023
-                                
-                                    </h3>
-                                    <p> The Battle of Minds is a global competition hosted by British American Tobacco that challenges university students to develop innovative solutions to real-world business challenges. Participants compete in regional and global rounds, with networking and career opportunities available to finalists. The competition highlights British American Tobacco's commitment to innovation and talent development.
-                                
-                                    <br>   
-                                
-                                  <b><em style="color:violet"> Quarter Finalists
-                                </em></b>
-                                
-                                </td>
-                                </tr>
-                              
-                              <!--Accolades-->
-                              
-                              <td style="padding:2.5%;width:75%;vertical-align:middle">
-                                <h3 style="color: skyblue;"> Hult Prize 2020
-                                
-                                    </h3>
-                                    <p> Our sustainable and eco-friendly toothbrush company prototype "Meseco" made it possible for us to participate in this prestigious competition. 
-                                
-                                    <br>   
-                                
-                                  <b><em style="color:violet"> 2nd Runnerup on-campus round
-                                </em></b>
-                                  
-                              
-                               
-                                </td>
-                                </tr>
-                              
-                              <td style="padding:2.5%;width:75%;vertical-align:middle">
-                              <h3 style="color: skyblue;"> Banglalink Ennovators 
-                              
-                                  </h3>
-                                  <p> Ennovators is an idea-generating competition that is held across the country among youth to allow them to fulfill their potential
-                                  <br>   
-                              
-                                <b><em style="color:violet">Top 100
-                              </em></b>
-                              
-                              </td>
-                              </tr>
-                              
-                                  
-                              <td style="padding:2.5%;width:75%;vertical-align:middle">
-                              <h3 style="color: skyblue;"> UniV Poster Presenation
-                              
-                                  </h3>
-                                  <p> Our idea was based on a sustainable solution to lessen te damage of river erosion by the Meghna River
-                                  <br>   
-                              
-                                <b><em style="color:violet">Gold Award
-                              </em></b>
-                              
-                              </td>
-                              </tr>
+  <div id="accolades">
+    <h2 style="text-align: center;">Extracurricular and Accolades</h2>
 
+    <h3 style="color: skyblue; text-align: center;">BUET Career Club</h3>
+    <p style="text-align: center;">Being the president of BCC has been one of the most exhausting yet rewarding experiences of my life. Leading 140 talented individuals has been the highlight of my university life.</p>
+    <p style="text-align: center;"><em style="color: violet;">Position: President</em></p>
+    <img src="Images/bcc.jpeg" alt="BUET Career Club" style="width:300px; height:200px; display: block; margin: 0 auto;">
+
+    <h3 style="color: skyblue; text-align: center;">Battle of Minds - 2023</h3>
+    <p style="text-align: center;">The Battle of Minds is a global competition hosted by British American Tobacco, challenging university students to develop innovative solutions. Participating in this competition provided incredible networking and career opportunities.</p>
+    <p style="text-align: center;"><em style="color: violet;">Achievement: Quarter Finalists</em></p>
+
+    <h3 style="color: skyblue; text-align: center;">Hult Prize 2020</h3>
+    <p style="text-align: center;">Our sustainable and eco-friendly toothbrush company prototype "Meseco" allowed us to participate in this prestigious competition.</p>
+    <p style="text-align: center;"><em style="color: violet;">Achievement: 2nd Runner-up (On-campus round)</em></p>
+
+    <h3 style="color: skyblue; text-align: center;">Banglalink Ennovators</h3>
+    <p style="text-align: center;">Ennovators is an idea-generating competition across Bangladesh, fostering innovation among youth. Competing here was a valuable experience in idea development and teamwork.</p>
+    <p style="text-align: center;"><em style="color: violet;">Achievement: Top 100</em></p>
+
+    <h3 style="color: skyblue; text-align: center;">UniV Poster Presentation</h3>
+    <p style="text-align: center;">Our poster, based on sustainable solutions to reduce the damage caused by Meghna River erosion, was a recognized contribution in the field of environmental resilience.</p>
+    <p style="text-align: center;"><em style="color: violet;">Award: Gold Award</em></p>
+  </div>
+</body>
+</html>
+
+                             
