@@ -153,6 +153,25 @@
       margin: 10px 0;
     }
   </style>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".navbar button");
+      buttons.forEach(button => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("data-target");
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80, // Adjust for fixed navbar height
+              behavior: "smooth"
+            });
+          }
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -211,12 +230,6 @@
       <p>In this study, my downscaled output was at 0.17x0.2 degrees, visualizing the impact of climate change on precipitation under SSP 3-7.00 scenarios.</p>
       <p><strong>Thesis Supervisor:</strong> <a href="https://scholar.google.com/citations?user=40TTseQAAAAJ&hl=en&oi=ao">Dr. A.T.M. Hasan Zobeyer</a></p>
     </div>
-    <div class="research-entry">
-      <h3>Riparian Management and Riverbank Erosion: A Case Study on Harirampur Upazila</h3>
-      <p><em>Presented at 6th International Conference on Advances in Civil Engineering (ICACE-2022), CUET, Bangladesh</em></p>
-      <p>This study examines riverbank erosion management along the Padma River using GIS and NDVI analyses, proposing eco-friendly guidelines for sustainable protection.</p>
-      <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=HvjsPBMAAAAJ">Mushtari Maliha</a></p>
-    </div>
   </div>
 
   <!-- Projects Section -->
@@ -256,6 +269,3 @@
   </div>
 </body>
 </html>
-
-
-                             
