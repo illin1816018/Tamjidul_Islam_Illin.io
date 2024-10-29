@@ -12,7 +12,7 @@
     /* Style for the navigation bar */
     .navbar {
       overflow: hidden;
-      background-color: #121212; /* Match background color */
+      background-color: #000000; /* Pitch black background */
       position: fixed;
       top: 0;
       width: 100%;
@@ -20,7 +20,7 @@
       display: flex;
       justify-content: center;
       padding: 10px 0;
-      font-family: Arial, sans-serif; /* Change font */
+      font-family: Arial, sans-serif;
     }
 
     .navbar-container {
@@ -32,7 +32,7 @@
 
     .navbar button {
       color: #f2f2f2;
-      background-color: #121212;
+      background-color: #000000;
       padding: 10px 20px;
       border: none;
       cursor: pointer;
@@ -46,9 +46,9 @@
 
     body {
       padding-top: 80px;
-      color: #e0e0e0; /* Light grey color for text */
-      font-family: Arial, sans-serif; /* Consistent font */
-      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* Pitch black background */
       margin: 0;
       line-height: 1.6;
     }
@@ -56,32 +56,42 @@
     .content-container {
       max-width: 900px;
       margin: 0 auto;
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      padding: 20px;
     }
 
     .intro {
-      text-align: center;
-      width: 100%;
+      flex: 1;
+      min-width: 250px;
+      margin-right: 20px;
     }
 
     .intro h1 {
       font-size: 2.5em;
-      color: #ffffff; /* White color for name */
+      color: #ffffff;
       font-weight: bold;
+      text-align: center;
     }
 
     .intro h2 {
       font-size: 1.2em;
-      color: #b0b0b0; /* Grey color for subtitle */
+      color: #b0b0b0;
+      text-align: center;
     }
 
     .intro p {
       font-size: 1em;
       margin-top: 10px;
       color: #ddd;
+      text-align: justify;
+    }
+
+    .profile-photo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .profile-photo {
@@ -89,7 +99,6 @@
       width: 200px;
       height: 200px;
       object-fit: cover;
-      margin-top: 10px;
     }
 
     .section-title {
@@ -132,6 +141,17 @@
 
     .link-section a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .content-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .intro, .profile-photo-container {
+        text-align: center;
+        margin: 0;
+      }
     }
   </style>
   
@@ -179,7 +199,9 @@
         <a href="https://www.linkedin.com/in/tamjidul-islam-illin-b425641a5/">LinkedIn</a>
       </div>
     </div>
-    <img src="Images/self1.jpeg" alt="Profile photo of Tamjidul Islam Illin" class="profile-photo">
+    <div class="profile-photo-container">
+      <img src="Images/self1.jpeg" alt="Profile photo of Tamjidul Islam Illin" class="profile-photo">
+    </div>
   </div>
 
   <!-- Education Section -->
@@ -205,14 +227,12 @@
   <!-- Research Works Section -->
   <div id="research" class="section-content">
     <h2 class="section-title">Research Works</h2>
-    
     <div class="research-entry">
       <h3>Downscaling Climate Model Data Using Machine Learning and Assessing the Impact of Climate Change on the Rainfall of Potomac Basin</h3>
       <p><em>Undergraduate Thesis</em></p>
       <p>In this study, my downscaled output was at 0.17x0.2 degrees, visualizing the impact of climate change on precipitation under SSP 3-7.00 scenarios.</p>
       <p><strong>Thesis Supervisor:</strong> <a href="https://scholar.google.com/citations?user=40TTseQAAAAJ&hl=en&oi=ao">Dr. A.T.M. Hasan Zobeyer</a></p>
     </div>
-
     <div class="research-entry">
       <h3>Riparian Management and Riverbank Erosion: A Case Study on Harirampur Upazila</h3>
       <p><em>Presented at 6th International Conference on Advances in Civil Engineering (ICACE-2022), CUET, Bangladesh</em></p>
@@ -224,7 +244,6 @@
   <!-- Work Experience Section -->
   <div id="Work Experience" class="section-content">
     <h2 class="section-title">Work Experience</h2>
-
     <div class="work-entry">
       <h3>CLIMAS Climate Assembly</h3>
       <p>Developing a Knowledge Evidence-Based Support (KEBS) tool to automate agenda generation for the European Climate Assembly using NLP.</p>
@@ -234,7 +253,6 @@
   <!-- Industrial Training Section -->
   <div id="internship" class="section-content">
     <h2 class="section-title">Internship</h2>
-
     <div class="training-entry">
       <h3>Institute of Water Modelling (IWM), Uttara</h3>
       <p>Hands-on training in SWAT and its real-time application for hydrological decision-making.</p>
@@ -245,21 +263,33 @@
   <!-- Participations and Accolades Section -->
   <div id="accolades" class="section-content">
     <h2 class="section-title">Participations and Accolades</h2>
-
     <div class="accolade-entry">
       <h3>BUET Career Club</h3>
       <p>Being the president of BCC has been one of the most exhausting yet rewarding experiences of my life. Leading 140 talented individuals has been the highlight of my university life.</p>
       <p><em>Position: President</em></p>
       <img src="Images/bcc.jpeg" alt="BUET Career Club" class="training-image">
     </div>
-
     <div class="accolade-entry">
       <h3>Battle of Minds - 2023</h3>
       <p>The Battle of Minds is a global competition hosted by British American Tobacco, challenging university students to develop innovative solutions.</p>
       <p><em>Achievement: Quarter Finalists</em></p>
     </div>
+    <div class="accolade-entry">
+      <h3>Hult Prize 2020</h3>
+      <p>Our sustainable and eco-friendly toothbrush company prototype "Meseco" allowed us to participate in this prestigious competition.</p>
+      <p><em>Achievement: 2nd Runner-up (On-campus round)</em></p>
+    </div>
+    <div class="accolade-entry">
+      <h3>Banglalink Ennovators</h3>
+      <p>Ennovators is an idea-generating competition across Bangladesh, fostering innovation among youth.</p>
+      <p><em>Achievement: Top 100</em></p>
+    </div>
+    <div class="accolade-entry">
+      <h3>UniV Poster Presentation</h3>
+      <p>Our poster, based on sustainable solutions to reduce the damage caused by Meghna River erosion, was a recognized contribution in environmental resilience.</p>
+      <p><em>Award: Gold Award</em></p>
+    </div>
   </div>
 </body>
 </html>
-
 
